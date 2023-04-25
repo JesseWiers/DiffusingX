@@ -1,0 +1,28 @@
+{
+    "exp_dir": "experiments/fishes_2/",
+    "model_type": "ddpm",
+
+    "category": "fishes_2",
+    "number_class": 2,
+    "ignore_label": 255,
+
+    "training_path": "/fish_segmentation/a-large-scale-fish-dataset/train/",
+    "validation_path": "/fish_segmentation/a-large-scale-fish-dataset/validation/",
+    "testing_path": "/fish_segmentation/a-large-scale-fish-dataset/test/",
+    "model_path": "/fish_segmentation/trained_models/shrimp/ema_0.9999_400000.pt",
+
+    "dim": [256, 256, 4608],
+    "steps": [50, 150, 250],
+    "blocks": [5, 6, 7, 8, 12],
+
+    "model_num": 10,
+    "batch_size": 2,
+    "max_training": 30,
+
+    "training_number": 20,
+    "testing_number": 20,
+
+    "upsample_mode":"bilinear",
+    "share_noise": true,
+    "input_activations": false
+}
